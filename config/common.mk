@@ -223,3 +223,7 @@ ifneq ($(TARGET_APERTURE_OPTOUT),true)
 PRODUCT_PACKAGES += \
     Aperture
 endif
+
+# Disable iorapd
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.iorapd.enable=false
