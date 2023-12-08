@@ -1,5 +1,6 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/addons/config.mk)
 
 PRODUCT_BRAND ?= LineageOS
 
@@ -227,3 +228,7 @@ endif
 # Disable iorapd
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.iorapd.enable=false
+
+# Extra packages
+PRODUCT_PACKAGES += \
+    GameSpace
