@@ -229,13 +229,10 @@ include vendor/lineage/config/version.mk
 # Camera
 ifneq ($(TARGET_APERTURE_OPTOUT),true)
 PRODUCT_PACKAGES += \
-    Aperture
+    Aperture \
+    Glimpse
 endif
 
 # Disable iorapd
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.iorapd.enable=false
-
-# Extra packages
-PRODUCT_PACKAGES += \
-    GameSpace
