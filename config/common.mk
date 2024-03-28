@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     hosts.real
 
 PRODUCT_COPY_FILES += \
-    vendor/lineage/etc/init/init.adblock.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.adblock.rc
+    vendor/lineage/etc/adblock/init.adblock.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.adblock.rc
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
