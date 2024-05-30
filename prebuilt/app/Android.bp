@@ -29,7 +29,6 @@ android_app_import {
     },
     overrides: [
         "Gallery",
-        "Gallery2",
         "Gallery3D",
         "GalleryNew3D",
     ],
