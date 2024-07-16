@@ -33,6 +33,6 @@ android_app_import {
         "Gallery3D",
         "GalleryNew3D",
     ],
-    apk: "Glimpse20240214.apk",
+    apk: "Glimpse20240701.apk",
     presigned: true,
 }
