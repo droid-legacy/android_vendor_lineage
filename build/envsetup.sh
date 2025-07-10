@@ -102,7 +102,7 @@ function omnom()
 function cout()
 {
     if [  "$OUT" ]; then
-        cd $OUT
+        cd $OUT || exit
     else
         echo "Couldn't locate out directory.  Try setting OUT."
     fi
@@ -680,7 +680,7 @@ function lineagerebase() {
         echo "Directory $dir doesn't exist in tree."
         return
     fi
-    cd $dir
+    cd $dir || exit
     repo=$(cat .git/config  | grep git://github.com | awk '{ print $NF }' | sed s#git://github.com/##g)
     echo "Starting branch..."
     repo start tmprebase .
@@ -696,7 +696,7 @@ function lineagerebase() {
     repo upload .
     echo "Cleaning up..."
     repo abandon tmprebase .
-    cd $pwd
+    cd $pwd || exit
 }
 
 function mka() {
